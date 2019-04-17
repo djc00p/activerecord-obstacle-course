@@ -177,7 +177,7 @@ describe 'ActiveRecord Obstacle Course' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    orders_less_than_550 = Order.where("amount < 550", 550)
+    orders_less_than_550 = Order.where("amount < ?", 550)
     # ------------------------------------------------------------
 
     # Expectation
